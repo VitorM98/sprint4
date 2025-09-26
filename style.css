@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px gray;
+    width: 100%;
+}
+
+.logo {
+    padding: 4px;
+}
+
+.lista {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    list-style-type: none;
+}
+
+.lista li {
+    margin: 0 20px 0 20px;
+   
+}
+
+.lista a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.lista a:link {
+    color: blue;
+}
+
+/* Garante que o link visitado MANTENHA a mesma cor */
+.lista a:visited {
+    color: #1351d8;
+}
+
+/* Cor ao passar o mouse */
+.lista a:hover {
+    color: #1b357e;
+}
+
+/* Cor ao clicar (segurar o clique) */
+.lista a:active {
+    color: red;
+}
+
+
+/* corpo do site */
+
+.corpo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.imagemCarro {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1700px;
+}
+
+.corpo p {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.corpo a {
+    text-decoration: none;
+}
+
+.corpo a:visited {
+    color: #1351d8;
+}
+
+.corpo a:hover {
+    color: #1b357e;
+}
+
+.rodape2 {
+    display: flex;
+    background-color: #1b357e;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+}
+
+.redeSocial2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.logoRodape2 {
+    margin-right: 10px;
+}
+
+.textoCop2 {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+/* footer */
+
+.rodape {
+    display: flex;
+    background-color: #1b357e;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    height: 60px;
+}
+
+.redeSocial {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.logoRodape {
+    margin-right: 10px;
+}
+
+.textoCop {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+/* MAIN DA PAGINA LANÇAMENTO */
+
+iframe {
+    margin-top: 10px;
+}
+
+/* carros e checkbox */
+
+.carrosContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    /* espaço entre os carros */
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.carro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.carro img {
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.infos input[type="checkbox"] {
+    width: 28px;
+    height: 28px;
+    accent-color: #1b357e;
+    cursor: pointer;
+}
+
+.infos p {
+    margin: 2px 0;
+    font-size: 15px;
+}
+
+.infos img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* botao comparar */
+
+.botao-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 800px;
+}
+
+.btn-comparar {
+    background-color: #1b357e;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: block;
+    margin: 40px auto;
+}
+
+.btn-comparar:hover {
+    background-color: #1351d8;
+}
+
+
+/* MAIN DA PAGINA CONTATO */
+
+/* Página Contato */
+.corpoContato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.form-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container img {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+}
+
+.formulario h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1b357e;
+}
+
+.formulario input,
+.formulario select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.formulario button {
+    background-color: #1b357e;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #1351d8;
+}
+
+
+/* rodape contato */
+
+.rodape1 {
+    display: flex;
+    background-color: #1b357e;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+}
+
+.redeSocial1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.logoRodape1 {
+    margin-right: 10px;
+}
+
+.textoCop1 {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+/* ===================== */
+/*   RESPONSIVIDADE EXTRA PARA ANDROID  */
+/* ===================== */
+
+/* Smartphones Android comuns (até 430px de largura) */
+@media (max-width: 430px) {
+    body {
+        font-size: 14px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .lista {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .imagemCarro {
+        width: 100%;
+        height: auto;
+    }
+
+    .carrosContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carro img {
+        max-width: 90%;
+    }
+
+    .btn-comparar {
+        width: 100%;
+        max-width: 320px;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .formulario input,
+    .formulario select {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .formulario button {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .rodape,
+    .rodape1 {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 12px;
+        height: auto;
+    }
+
+    .redeSocial,
+    .redeSocial1 {
+        margin: 0;
+    }
+
+    .logoRodape,
+    .logoRodape1 {
+        margin: 0 auto;
+    }
+}
+
+/* Smartphones Android grandes (até 600px de largura) */
+@media (max-width: 600px) {
+    .imagemCarro {
+        max-width: 100%;
+    }
+
+    .form-container img {
+        max-width: 100%;
+    }
+}
