@@ -375,7 +375,7 @@ iframe {
 /* ===================== */
 
 /* Smartphones Android comuns (até 430px de largura) */
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     body {
         font-size: 14px;
     }
@@ -468,13 +468,20 @@ iframe {
 
 
     .rodape,
-    .rodape1,
-    .rodape2 {
+    .rodape1{
         text-align: center;
         padding: 0px;
         height: auto;
         width: 100%;
         position: relative;
+    }
+
+    .rodape2 {
+        text-align: center;
+        padding: 0px;
+        height: auto;
+        width: 100%;
+        position: fixed;
     }
 
     .logoRodape {
@@ -623,13 +630,13 @@ iframe {
 }
 
 /* Smartphones Android grandes (até 500px de largura) */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .imagemCarro {
         max-width: 100%;
     }
 
     .corpo p {
-        max-width: 100%;
+        max-width: 100vh;
     }
 
     .form-container img {
@@ -650,16 +657,25 @@ iframe {
 
     .menu {
         max-width: 100%;
+        padding: 0px;
     }
 
     .rodape,
-    .rodape1,
+    .rodape1 {
+        display: flex;
+        text-align: center;
+        gap: 8px;
+        padding: 0px;
+        height: auto;
+    }
+
     .rodape2 {
         display: flex;
         text-align: center;
         gap: 8px;
-        padding: 4px;
+        padding: 0px;
         height: auto;
+        position: fixed;
 
     }
 
