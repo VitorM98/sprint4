@@ -378,6 +378,12 @@ iframe {
 @media (max-width: 1200px) {
     body {
         font-size: 14px;
+        min-height: 100vh;
+    }
+
+        *{
+        margin: 0;
+        padding: 0;
     }
 
     .menu {
@@ -635,6 +641,15 @@ iframe {
         max-width: 100%;
     }
 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
     .corpo p {
         max-width: 100vh;
     }
@@ -676,6 +691,7 @@ iframe {
         padding: 0px;
         height: auto;
         position: fixed;
+        bottom: 0;
 
     }
 
