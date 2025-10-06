@@ -6,7 +6,7 @@
 }
 
 body {
-    min-height: 100vh;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -25,7 +25,7 @@ main {
     box-shadow: 5px 5px 10px gray;
     width: 100%;
     position: relative; /* Essencial para que o posicionamento absoluto do logo funcione */
-    padding: 40px 20px; /* Adiciona espaçamento nas laterais */
+    padding: 100px 0 0 0; /* Adiciona espaçamento nas laterais */
 }
 
 .logo {
@@ -38,12 +38,11 @@ main {
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Certifique-se de que não haja margens */
+    margin: -60px 0 0 0; /* Certifique-se de que não haja margens */
 }
 
 .lista li {
     margin: 0 20px 0 20px;
-
 }
 
 .lista a {
@@ -385,7 +384,7 @@ iframe {
         flex-direction: column;
         align-items: center;
         gap: 8px;
-        padding: 20px;
+        padding: 0px;
     }
 
     .lista {
@@ -402,8 +401,7 @@ iframe {
     }
 
     .imagemCarro {
-        width: 100vh;
-        height: auto;
+        width: 100%;
     }
 
     .carrosContainer {
@@ -473,9 +471,10 @@ iframe {
     .rodape1,
     .rodape2 {
         text-align: center;
-        gap: 8px;
-        padding: 12px;
+        padding: 0px;
         height: auto;
+        width: 100%;
+        position: relative;
     }
 
     .logoRodape {
