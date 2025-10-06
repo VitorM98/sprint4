@@ -276,7 +276,7 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .form-container {
@@ -471,6 +471,10 @@ iframe {
         padding: 14px;
         font-size: 15px;
 
+    }
+
+    .corpoContato {
+        margin-bottom: 20px;
     }
 
 
